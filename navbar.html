@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset dasar agar tampilan konsisten di semua browser */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa; /* Warna latar belakang halaman */
+        }
+
+        /* --- Style Inti Navbar --- */
+        .navbar {
+            background-color: #343a40; /* Warna gelap untuk navbar */
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            list-style: none;
+            display: flex;
+            gap: 25px; /* Jarak antar menu */
+        }
+
+        .navbar-links a {
+            color: #e9ecef;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: #007bff; /* Warna biru saat di-hover */
+        }
+        
+        /* Style untuk menandai menu yang sedang aktif */
+        .navbar-links a.active {
+            color: #ffffff;
+            font-weight: 700;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Admin Kampus</a>
+            <ul class="navbar-links">
+                <li><a href="#" class="active">Dasbor</a></li>
+                <li><a href="#">Tambah Mahasiswa</a></li>
+                <li><a href="#">Laporan</a></li>
+                <li><a href="#">Pengaturan</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div style="padding: 20px; text-align: center; font-size: 1.5rem; margin-top: 40px;">
+        
+    </div>
+
+</body>
+</html>
