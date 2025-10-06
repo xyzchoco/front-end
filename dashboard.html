@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Mahasiswa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Global Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- Dashboard Container --- */
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Header --- */
+        .dashboard-header {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-header h1 {
+            color: #0056b3;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .dashboard-header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* --- Main Content & Table Container --- */
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Agar tabel bisa di-scroll di layar kecil */
+        }
+
+        .table-container h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        thead tr {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        th, td {
+            padding: 15px 20px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+            transition: background-color 0.3s ease;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #007bff;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        /* --- Action Buttons --- */
+        .btn {
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .btn-edit {
+            background-color: #28a745; /* Hijau */
+            margin-right: 8px;
+        }
+
+        .btn-delete {
+            background-color: #dc3545; /* Merah */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Dasbor Admin Pendaftaran Mahasiswa</h1>
+            <p>Selamat datang, Admin!</p>
+        </header>
+
+        <main class="dashboard-content">
+            <div class="table-container">
+                <h2>Daftar Mahasiswa Aktif</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NIM</th>
+                            <th>Nama Mahasiswa</th>
+                            <th>Jurusan</th>
+                            <th>Angkatan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202301001</td>
+                            <td>Budi Santoso</td>
+                            <td>Teknik Informatika</td>
+                            <td>2023</td>
+                            <td>
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>202302002</td>
+                            <td>Citra Lestari</td>
+                            <td>Sistem Informasi</td>
+                            <td>2023</td>
+                            <td>
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>202203005</td>
+                            <td>Agus Setiawan</td>
+                            <td>Desain Komunikasi Visual</td>
+                            <td>2022</td>
+                            <td>
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>202401010</td>
+                            <td>Dewi Anggraini</td>
+                            <td>Teknik Informatika</td>
+                            <td>2024</td>
+                            <td>
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>202205011</td>
+                            <td>Eko Prasetyo</td>
+                            <td>Manajemen Bisnis</td>
+                            <td>2022</td>
+                            <td>
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
