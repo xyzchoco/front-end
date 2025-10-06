@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .login-container img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .login-container h2 {
+            margin-bottom: 25px;
+            color: #1c1c1e;
+            font-size: 28px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box; 
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #007aff;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            background-color: #007aff;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="logo.png" alt="Logo"> <!-- Ganti dengan path logo kamu -->
+        <h2>Selamat Datang!</h2>
+        
+        <!-- form diarahkan ke dashboard.html -->
+        <form action="dashboard.html" method="get">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Nama Pengguna" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Kata Sandi" required>
+            </div>
+            <button type="submit" class="login-button">Masuk</button>
+        </form>
+    </div>
+
+</body>
+</html>
